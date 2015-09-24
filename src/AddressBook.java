@@ -19,11 +19,12 @@ public class AddressBook {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("Address Book");
-		AddressBook ab = new AddressBook();
 		BuddyInfo buddy = new BuddyInfo();
-		buddy.setName("Haris");
+		buddy.setName("Haris");		
+		AddressBook ab = new AddressBook();
 		ab.addBuddy(buddy);
 		ab.removeBuddy(buddy);
+		
+		ab.addBuddy(buddy);
 	}
 }
