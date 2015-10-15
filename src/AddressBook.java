@@ -18,13 +18,12 @@ public class AddressBook {
 		buddies.remove(buddy);
 	}
 	
-	public static void main(String[] args) {
-		BuddyInfo buddy = new BuddyInfo();
-		buddy.setName("Haris");		
-		AddressBook ab = new AddressBook();
-		ab.addBuddy(buddy);
-		ab.removeBuddy(buddy);
-		
-		ab.addBuddy(buddy);
+	public String display(){
+		String t = "";
+		for (BuddyInfo buddy: buddies){
+			t+= buddy.toString();
+		}
+		return t + "\n";
 	}
+	
 }

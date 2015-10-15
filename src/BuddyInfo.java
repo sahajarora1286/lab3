@@ -1,7 +1,7 @@
 
 public class BuddyInfo {
 	private String name, address;
-	private int phone;
+	private String phone;
 	
 
 	public String getName() {
@@ -24,12 +24,12 @@ public class BuddyInfo {
 	}
 
 
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
 
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -40,6 +40,28 @@ public class BuddyInfo {
 		buddy.setName("Haris");
 		
 		System.out.println("Hello " + buddy.getName());
+	}
+	
+	@Override
+	public String toString(){
+		String s = "Name: " + name + "\n" + "Address: " + address + "\n" + "Phone: " + phone + "\n";
+		return s;
+	}
+	
+	@Override
+	public boolean equals(Object other){
+		if (other == null) return false;
+	    if (other == this) return true;
+	    if (!(other instanceof BuddyInfo))return false;
+	    BuddyInfo b = (BuddyInfo)other;
+		if (name.equals(b.getName())){
+			if (address.equals(b.getAddress())){
+				if (phone == b.getPhone()){
+					return true;
+				}
+			}
+		}
+		return false;
 	}
 
 }
