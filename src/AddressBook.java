@@ -18,6 +18,10 @@ public class AddressBook {
 		buddies.remove(buddy);
 	}
 	
+	public List<BuddyInfo> getBuddies(){
+		return buddies;
+	}
+	
 	public String display(){
 		String t = "";
 		for (BuddyInfo buddy: buddies){

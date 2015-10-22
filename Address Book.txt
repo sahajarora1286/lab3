@@ -1,7 +1,4 @@
-Name: john
-Address: asdajdasd
-Phone: 87878718712
-Name: Mac
-Address: jsdfjndajfn
-Phone: 54213564
+Name: k
+Address: k
+Phone: k
 
