@@ -22,6 +22,14 @@ public class AddressBook {
 		return buddies;
 	}
 	
+	public int size(){
+		return buddies.size();
+	}
+	
+	public void clear(){
+		buddies.clear();
+	}
+	
 	public String display(){
 		String t = "";
 		for (BuddyInfo buddy: buddies){
