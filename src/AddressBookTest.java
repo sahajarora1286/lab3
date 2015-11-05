@@ -10,7 +10,6 @@ public class AddressBookTest {
 	@Before
 	public void setUp() {
 		addressBook = new AddressBook();
-		
 	}
 
 	@Test
@@ -33,6 +32,9 @@ public class AddressBookTest {
 	
 	@Test
 	public void testClearMethod(){
+		addressBook.addBuddy(new BuddyInfo());
+		addressBook.addBuddy(new BuddyInfo());
+		assertEquals("The size of the address book should be 2.", 2, addressBook.size());
 		addressBook.clear();
 		assertEquals("The size of the address book should now be 0.", 0, addressBook.size());
 	}
